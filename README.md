@@ -6,7 +6,7 @@
 
 ## Herramientas y tecnologías
 
-[![Herramientas y tecnologías](https://skillicons.dev/icons?i=python,nestjs,js,ts,vscode,docker,angular,postgres)](https://skillicons.dev)
+[![Herramientas y tecnologías](https://skillicons.dev/icons?i=js,python,ts,docker,vscode,postgres,nestjs,angular)](https://skillicons.dev)
 
 ## Contacto
 
