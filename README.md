@@ -10,4 +10,4 @@
 
 ## Contacto
 
-[![GitHub](https://skillicons.dev/icons?i=github)] [![Gmail](https://skillicons.dev/icons?i=gmail)](mailto:toniollosantiago@gmail.com)
+[![Gmail](https://skillicons.dev/icons?i=gmail)](mailto:toniollosantiago@gmail.com)
