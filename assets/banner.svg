@@ -1,1 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="300" viewBox="0 0 1000 300" role="img" aria-label="Santiago Toniollo - Estudiante de Ingeniería en Sistemas">
+  <style>
+    text { font-family: system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; }
+    .bg { fill: #fafafa; }  .frame { stroke: #e5e5e5; }
+    .fg { fill: #0a0a0a; }  .muted { fill: #737373; }
+    .fg-s { stroke: #0a0a0a; }
+    .ring { stroke: #a3a3a3; }
+    @media (prefers-color-scheme: dark) {
+      .bg { fill: #0a0a0a; } .frame { stroke: #262626; }
+      .fg { fill: #fafafa; } .muted { fill: #a3a3a3; }
+      .fg-s { stroke: #fafafa; }
+      .ring { stroke: #525252; }
+    }
+    .label { font-size: 14px; letter-spacing: 4px; font-weight: 500; animation: in .9s ease-out both; }
+    .name  { font-size: 64px; font-weight: 700; letter-spacing: -1.5px; animation: in 1s .2s ease-out both; }
+    .line  { stroke-dasharray: 380; stroke-dashoffset: 380; animation: draw 1.2s .8s ease-out forwards; }
+    .sub   { font-size: 28px; font-weight: 400; }
+    .spin  { transform-origin: 830px 150px; animation: rot 40s linear infinite; }
+    .spin2 { transform-origin: 830px 150px; animation: rot 60s linear infinite reverse; }
+    .code  { font-family: ui-monospace, Menlo, Consolas, monospace; font-size: 34px; font-weight: 600; animation: in 1s 1s ease-out both; }
+    @keyframes in   { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
+    @keyframes draw { to { stroke-dashoffset: 0; } }
+    @keyframes rot  { to { transform: rotate(360deg); } }
+  </style>
+  <defs>
+    <clipPath id="type">
+      <rect x="70" y="205" width="0" height="50">
+        <animate attributeName="width" from="0" to="640" begin="1.6s" dur="1.8s" fill="freeze"/>
+      </rect>
+    </clipPath>
+  </defs>
 
+  <rect class="bg" width="1000" height="300" rx="16"/>
+  <rect class="frame" x=".5" y=".5" width="999" height="299" rx="16" fill="none"/>
+
+  <text class="label muted" x="70" y="92">HOLA, SOY</text>
+  <text class="name fg" x="70" y="168">Santiago Toniollo</text>
+  <path class="line fg-s" d="M72 192 H452" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <text class="sub muted" x="70" y="240" clip-path="url(#type)">Estudiante de Ingeniería en Sistemas</text>
+
+  <g fill="none" stroke-width="1.5">
+    <circle class="ring spin"  cx="830" cy="150" r="95" stroke-dasharray="4 10"/>
+    <circle class="ring spin2" cx="830" cy="150" r="65" stroke-dasharray="2 8"/>
+    <circle class="fg-s" cx="830" cy="150" r="36"/>
+  </g>
+  <text class="code fg" x="830" y="162" text-anchor="middle">&lt;/&gt;</text>
+</svg>
